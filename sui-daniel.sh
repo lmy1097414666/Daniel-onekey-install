@@ -23,7 +23,7 @@ install_docker(){
 }
 
 install_sui(){
-apt install wget unzip pass gnupg2 -y
+yum install wget unzip pass gnupg2 -y
 sudo mkdir -p ~/sui-node/devnet && cd ~/sui-node/devnet
 sudo wget -O fullnode-template.yaml https://github.com/MystenLabs/sui/raw/main/crates/sui-config/data/fullnode-template.yaml
 sudo wget -O genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
