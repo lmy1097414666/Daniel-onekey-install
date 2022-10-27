@@ -28,7 +28,7 @@ read -p " 请输入节点名字（自定义）:" name
 echo $name
 
 ##install aptos
-sudo apt install build-essential pkg-config openssl libssl-dev libclang-dev -y
+sudo yum install build-essential pkg-config openssl libssl-dev libclang-dev -y
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
 cargo install --git https://github.com/aptos-labs/aptos-core.git aptos --tag aptos-cli-v0.3.1
